@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link as ScrollLink } from 'react-scroll';
+
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { TypingText } from '../components';
 import styles from '../styles';
@@ -36,14 +38,14 @@ const About = () => (
         of the metaverse by scrolling down
       </motion.p>
 
-      <a href="#explore">
+      <ScrollLink to="explore" className="cursor-pointer">
         <motion.img
           variants={fadeIn('up', 'tween', 0.3, 1)}
           src="/arrow-down.svg"
           alt="arrow down"
           className="w-[18px] h-7 object-contain mt-7"
         />
-      </a>
+      </ScrollLink>
     </motion.div>
   </section>
 );

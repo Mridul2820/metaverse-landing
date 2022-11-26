@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link as ScrollLink } from 'react-scroll';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 import styles from '../styles';
 
@@ -36,7 +37,7 @@ const Hero = () => (
           alt="cover"
           className="w-full sm:h-[500px] h-[300px] object-cover rounded-t-[140px] z-10 relative"
         />
-        <a href="#about">
+        <ScrollLink to="about" className="cursor-pointer">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-10 relative z-10">
             <img
               src="/stamp.png"
@@ -44,7 +45,7 @@ const Hero = () => (
               className="sm:w-[155px] w-[100px] sm:h-[155px]  h-[100px] object-contain"
             />
           </div>
-        </a>
+        </ScrollLink>
       </motion.div>
     </motion.div>
   </section>
