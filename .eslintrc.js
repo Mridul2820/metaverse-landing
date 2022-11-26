@@ -13,6 +13,8 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    '@next/next/no-img-element': 'off',
+    '@next/next/no-document-import-in-page': 'off',
     'react/no-unescaped-entities': 0,
     'eslintreact/no-danger': 0,
     'react/jsx-max-props-per-line': 0,
