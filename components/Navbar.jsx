@@ -15,6 +15,7 @@ const Navbar = () => (
     <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
       <img src="/search.svg" alt="search" className="w-8 h-8 object-contain" />
       <h2 className="font-extrabold text-2xl text-white">METAVERSE</h2>
+      <img src="/menu.svg" alt="menu" className="w-8 h-8 object-contain" />
     </div>
   </motion.nav>
 );
